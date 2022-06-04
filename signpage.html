@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 30%;
+      /* border: 1px solid red; */
+      margin: auto;
+      background-color: #48c9b0;
+      padding-bottom: 30px;
+      margin-top: 50px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 35px;
+      padding-top: 50px;
+      color: white;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: auto;
+      margin-top: 30px;
+    }
+    div > input {
+      padding: 16px;
+      margin-bottom: 16px;
+      font-size: 18px;
+      border: none;
+    }
+    div > input:nth-child(4) {
+      background-color: #17a589;
+      cursor: pointer;
+      color: white;
+    }
+    div > input:nth-child(5) {
+      background-color: #17a589;
+      cursor: pointer;
+      color: white;
+    }
+    div > input:nth-child(4):hover {
+      background-color: #a6f0e1;
+      color: black;
+    }
+    div > input:nth-child(5):hover {
+      background-color: #a6f0e1;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Visitor</h2>
+      <div class="box">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Organization" />
+        <input type="button" value="SIGN UP" />
+        <input type="button" value="RETURN" />
+      </div>
+    </div>
+  </body>
+</html>
